@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="scripts/courses.js"></script>
+    <title>SoftUni Courses</title>
+</head>
+<body>
+<header>
+    <a href="#" class="float-right">
+        <img src="images/logo.png" alt="SoftUni Logo">
+    </a>
+    <h1>SoftUni Courses</h1>
+</header>
+<section class="row selection-content">
+    <div class="col col-sm-3 offset-sm-2 box">
+        <h2 class="text-center underline">Available courses</h2>
+        <ul id="#list-courses" class="list">
+        </ul>
+        <ul class="list list-horizontal li list-education">
+            <li>
+                <label>
+                    <input checked type="radio" value="On site" name="education-type">
+                    On site
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" value="Online" name="education-type">
+                    Online
+                </label>
+            </li>
+        </ul>
+        <div class="text-center box-footer">
+            <button class="btn btn-primary">Sign me up</button>
+        </div>
+    </div>
+    <div class="col col-sm-3 offset-sm-2 box">
+        <h2 class="text-center underline">My courses</h2>
+        <ul class="list list-bullets">
+            <li>Java Web</li>
+            <li>Java Fundamentals</li>
+        </ul>
+        <div class="text-center box-footer">
+            Cost : 0.00 BGN
+        </div>
+    </div>
+</section>
+<footer class="text-center">
+    <a href="https://softuni.bg"><span>Go to SoftUni</span></a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body{
+    background: url(../images/background.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    background-color: #3a75ff;
+    height: 50px;
+    padding: 5px 5px 0 5px
+}
+
+h1{
+    font-size: 18px;
+    color : white;
+}
+
+img {
+    height: 40px;
+}
+
+footer a span{
+    display : none;
+}
+
+footer a {
+    display: inline-block;
+    background-image: url("../images/wizard.png");
+    background-size: contain;
+    height: 400px;
+    width: 300px;
+    background-repeat: no-repeat;
+}
+
+.selection-content{
+    padding-top: 50px;
+}
+
+.list {
+    list-style-type: none;
+    margin : 0;
+    padding: 0 0 0 30px;
+}
+
+.list.list-bullets{
+    list-style-type: disc;
+}
+
+.list.list-horizontal li{
+    display: inline-block;
+}
+
+.list.list-horizontal{
+    padding: 0;
+}
+
+.list-education{
+    margin: 15px 0;
+}
+
+.box{
+    height: 300px;
+    border: solid 2px #3a75ff;
+    border-radius: 5px;
+    background: rgb(248, 249, 250);
+}
+
+.box-footer{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+
+.underline{
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
