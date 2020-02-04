@@ -21,34 +21,20 @@
 <section class="row selection-content">
     <div class="col col-sm-3 offset-sm-2 box">
         <h2 class="text-center underline">Available courses</h2>
-        <ul id="#list-courses" class="list">
+        <ul id="list-courses" class="list">
         </ul>
-        <ul class="list list-horizontal li list-education">
-            <li>
-                <label>
-                    <input checked type="radio" value="On site" name="education-type">
-                    On site
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" value="Online" name="education-type">
-                    Online
-                </label>
-            </li>
+        <ul id = "list-education-forms" class="list list-horizontal li list-education">
         </ul>
         <div class="text-center box-footer">
-            <button class="btn btn-primary">Sign me up</button>
+            <button id = "btn-sign-me-up" class="btn btn-primary">Sign me up</button>
         </div>
     </div>
     <div class="col col-sm-3 offset-sm-2 box">
         <h2 class="text-center underline">My courses</h2>
-        <ul class="list list-bullets">
-            <li>Java Web</li>
-            <li>Java Fundamentals</li>
+        <ul id="list-my-courses" class="list list-bullets">
         </ul>
         <div class="text-center box-footer">
-            Cost : 0.00 BGN
+            Cost: <span id="total-price">0.00</span> BGN
         </div>
     </div>
 </section>

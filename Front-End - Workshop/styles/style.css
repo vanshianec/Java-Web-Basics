@@ -76,3 +76,7 @@ footer a {
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
 }
+
+label input {
+    margin: 0 3px;
+}
