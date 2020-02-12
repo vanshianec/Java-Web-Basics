@@ -38,7 +38,7 @@
         </div>
     </nav>
     <h2 class="text-center text-white mt-5">Register</h2>
-    <form class="mx-auto w-15" method="post">
+    <form class="mx-auto w-15" method="post" action="/users/register">
         <br/>
         <div class="row">
             <div class="col col-md-3"></div>

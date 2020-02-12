@@ -1,4 +1,5 @@
-<%--
+<%@ page import="models.view.CarViewModel" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Иван Йовов
   Date: 12.2.2020 г.
@@ -45,36 +46,15 @@
     <h2 class="text-center text-white mt-5">West Compass Offers</h2>
     <hr style="width: 50%"/>
     <div class='row mb-4 d-flex justify-content-around'>
+        <% for (CarViewModel car : ((List<CarViewModel>)request.getAttribute("viewModel"))) {%>
         <div class="col-md-4 d-flex flex-column bg-text mb-3">
-            <h2>Owner: root</h2>
-            <h2>Brand: BMW</h2>
-            <h4>Model: 320</h4>
-            <h4>Year: 2007</h4>
-            <h4>Engine: diesel</h4>
+            <h2>Owner: <%= car.getUserUsername() %></h2>
+            <h2>Brand: <%= car.getBrand() %></h2>
+            <h4>Model: <%= car.getModel() %></h4>
+            <h4>Year: <%= car.getYear() %></h4>
+            <h4>Engine: <%= car.getEngine() %></h4>
         </div>
-        <div class="col-md-4 d-flex flex-column bg-text mb-3">
-            <h2>Owner: pesho</h2>
-            <h2>Brand: Opel</h2>
-            <h4>Model: OPC</h4>
-            <h4>Year: 2009</h4>
-            <h4>Engine: gasoline</h4>
-        </div>
-        <div class="col-md-4 d-flex flex-column bg-text mb-3">
-            <h2>Owner: pesho</h2>
-            <h2>Brand: Nissan</h2>
-            <h4>Model: GT-R</h4>
-            <h4>Year: 2020</h4>
-            <h4>Engine: diesel</h4>
-        </div>
-    </div>
-    <div class='row mb-4 d-flex justify-content-around'>
-        <div class="col-md-4 d-flex flex-column bg-text mb-3">
-            <h2>Owner: pesho</h2>
-            <h2>Brand: Peugeout</h2>
-            <h4>Model: 307</h4>
-            <h4>Year: 2003</h4>
-            <h4>Engine: diesel</h4>
-        </div>
+        <% } %>
     </div>
 </div>
 </body>
