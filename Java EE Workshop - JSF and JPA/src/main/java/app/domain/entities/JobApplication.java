@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "jop_applications")
+@Table(name = "job_applications")
 public class JobApplication extends BaseEntity {
 
     private Sector sector;
