@@ -24,7 +24,7 @@ public class User extends BaseEntity {
         this.username = username;
     }
 
-    @Column(name= "password", unique = true)
+    @Column(name= "password")
     public String getPassword() {
         return password;
     }
