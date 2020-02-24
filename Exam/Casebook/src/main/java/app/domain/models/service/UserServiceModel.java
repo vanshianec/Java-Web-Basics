@@ -11,7 +11,7 @@ public class UserServiceModel {
     private String username;
     private String password;
     private Gender gender;
-    private List<User> friends;
+    private List<UserServiceModel> friends;
 
     public UserServiceModel(){}
 
@@ -47,11 +47,11 @@ public class UserServiceModel {
         this.gender = gender;
     }
 
-    public List<User> getFriends() {
+    public List<UserServiceModel> getFriends() {
         return friends;
     }
 
-    public void setFriends(List<User> friends) {
+    public void setFriends(List<UserServiceModel> friends) {
         this.friends = friends;
     }
 }

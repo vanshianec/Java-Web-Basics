@@ -4,6 +4,7 @@ import app.domain.entities.User;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import java.util.List;
 
 public class UserRepositoryImpl implements UserRepository {
 
@@ -32,4 +33,25 @@ public class UserRepositoryImpl implements UserRepository {
         this.entityManager.getTransaction().commit();
         return user;
     }
+
+    @Override
+    public List<User> findAll() {
+        return this.entityManager.createQuery("SELECT u FROM User u", User.class).getResultList();
+    }
+
+    @Override
+    public void update(User user) {
+        this.entityManager.getTransaction().begin();
+        this.entityManager.merge(user);
+        this.entityManager.getTransaction().commit();
+    }
+
+    @Override
+    public User findById(String id) {
+        return this.entityManager.createQuery("SELECT u FROM User u WHERE u.id = :id", User.class)
+                .setParameter("id", id)
+                .getSingleResult();
+    }
+
+
 }
